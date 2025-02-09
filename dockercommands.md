@@ -20,7 +20,8 @@ Assignment 01
 
 1. Start a mysql container with options -d -p --name -e 
    docker container run -d -p 3306:3306 --name mysqldb -e MYSQL_RANDOM_ROOT_PASSWORD=yes mysql 
-2. Start an appache server on port 8080 --name webserver 
+2. Start an appache server on port 8080 --name webserver  
    docker container run -d --name webserver -p 8080:80 httpd 
-3. Start nginx server with -d -p --name 
-   docker container run -d --name webproxy -p 80:80 nginx
+3. Start nginx server with -d -p --name  
+   docker container run -d --name webproxy -p 80:80 nginx 
+
