@@ -1,0 +1,10 @@
+{
+   "dependencies": {
+      "express": "*"
+   },
+   "scripts": {
+      "start": "node index.js",
+      "build": "docker build -t dks/app1 .",
+      "run": "docker run -p 8888:8888 dks/app1"
+   }
+}
