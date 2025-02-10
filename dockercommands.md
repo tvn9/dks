@@ -20,7 +20,7 @@
 | docker container exec -it \<container id\> bash | run additional command in existing container      |
 | docker network inspect \<network name\>         | show all network configuration on localhost       |
 | docker build -t dks/app1 .                      | build images                                      |
-| docker run -p 8080:8080 \<image name\>          | run the container                                 |  |
+| docker run --detach -p 8080:8080 \<image name\> | run the container                                 |  |
 
 
 
