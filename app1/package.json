@@ -4,6 +4,6 @@
    },
    "scripts": {
       "start": "node index.js",
-      "build": "docker build -t dks/app1 .",
+      "build": "docker build -t dks/app1 ."
    }
 }
