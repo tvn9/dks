@@ -3,6 +3,7 @@ services:
   redis-server:
     image: "redis"
   node-app:
+    restart: "no"
     build: .
     ports:
-      - "5000:8080"
+      - "8080:8080"

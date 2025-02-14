@@ -1,11 +1,13 @@
-# Docker Commands Nodes
+# Docker Commands 
+
+## Docker (Dockerfile)
 
 | Commands                                        | Description                                       |
 | ----------------------------------------------- | ------------------------------------------------- |
 | docker container prune                          | remove all containers                             |
-| docker image prune                              | remove all imgages                                |
 | docker container rm \<container ID\>            | remove container                                  |
-| docker logs \<IDabc1234\>                       | show all logs from a container                    |
+| docker logs \<container ID\>                    | show all logs from a container                    |
+| docker start \<container ID\>                   | start a container in detach mode by default       |
 | docker stop \<container ID\>                    | stop a running container (delay up to 10 seconds) |
 | docker kill \<container ID\>                    | hard stop a running container                     |
 | docker exec -it \<id\> bash                     | start a cli evironment on a container             |
@@ -19,13 +21,18 @@
 | docker container run -it \<container id\> bash  | start new container interactively                 |
 | docker container exec -it \<container id\> bash | run additional command in existing container      |
 | docker network inspect \<network name\>         | show all network configuration on localhost       |
-| docker build -t dks/app1 .                      | build images                                      |
-| docker run --detach -p 8080:8080 \<image name\> | run the container                                 |  |
+| docker build .                                  | build a new image configured in Dockerfile        |
+| docker tag \<image id\> \<username\projectname> | add name to an un-name images                     |
+| docker build -t dks/app1 .                      | build a new image with a name                     |
+| docker run --detach -p 8080:8080 \<image name\> | create & run a new container in detach mode       |
 
 
+## Docker Compose (docker-compose) 
 
-
-
+| Commands             | Description                           |
+| -------------------- | ------------------------------------- |
+| docker-compose up -d | Buill all images and start containers |
+| docker-compose down  | Stop and remove all containers        |
 
 
 ## Assignments Results
