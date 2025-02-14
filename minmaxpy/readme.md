@@ -39,6 +39,8 @@ docker build -t minmaxpy .
 ### Start container and run app 
 
 ``` 
+# create a new container from existing image and run python app in interactive mode
 docker run -it <image ID> 
+# restart a container and run python app in attach and interactive mode
 docker start -a -i <container ID>
 ```
