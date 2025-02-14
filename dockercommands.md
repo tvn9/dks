@@ -1,6 +1,6 @@
-# Docker Commands 
+# Docker 
 
-## Docker (Dockerfile)
+## Container and Images Commands
 
 | Commands                                        | Description                                       |
 | ----------------------------------------------- | ------------------------------------------------- |
@@ -11,6 +11,7 @@
 | docker stop \<container ID\>                    | stop a running container (delay up to 10 seconds) |
 | docker kill \<container ID\>                    | hard stop a running container                     |
 | docker exec -it \<id\> bash                     | start a cli evironment on a container             |
+| docker run --detach -p 8080:8080 \<image name\> | create & run a new container in detach mode       |
 | docker container run --publish 80:80 nginx      | start nginx container on port 80:80               |
 | docker system prune                             | remove all containers                             |
 | docker container top                            | process list in one container                     |
@@ -20,14 +21,13 @@
 | docker rmi \<image id\>                         | remove an image                                   |
 | docker container run -it \<container id\> bash  | start new container interactively                 |
 | docker container exec -it \<container id\> bash | run additional command in existing container      |
-| docker network inspect \<network name\>         | show all network configuration on localhost       |
 | docker build .                                  | build a new image configured in Dockerfile        |
 | docker tag \<image id\> \<username\projectname> | add name to an un-name images                     |
 | docker build -t dks/app1 .                      | build a new image with a name                     |
-| docker run --detach -p 8080:8080 \<image name\> | create & run a new container in detach mode       |
 | docker start -a -i \<container ID\>             | start a container in attach and interactive mode  |
-
-
+| docker run -p 80:80 -d --rm 49533d5e8e1f        | option --rm remove the container after it stop    |
+| docker image inspect 3bbace02aa21               | inspect the detail info from an image             |
+| docker network inspect \<network name\>         | show all network configuration on localhost       |
 
 ## Docker Compose (docker-compose) 
 
@@ -36,6 +36,7 @@
 | docker-compose up -d | Buill all images and start containers |
 | docker-compose down  | Stop and remove all containers        |
 
+## Docker (Dockerfile)
 
 ## Assignments Results
 
