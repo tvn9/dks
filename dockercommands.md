@@ -25,6 +25,8 @@
 | docker tag \<image id\> \<username\projectname> | add name to an un-name images                     |
 | docker build -t dks/app1 .                      | build a new image with a name                     |
 | docker run --detach -p 8080:8080 \<image name\> | create & run a new container in detach mode       |
+| docker start -a -i \<container ID\>             | start a container in attach and interactive mode  |
+
 
 
 ## Docker Compose (docker-compose) 
