@@ -29,6 +29,14 @@
 | docker image inspect 3bbace02aa21               | inspect the detail info from an image             |
 | docker network inspect \<network name\>         | show all network configuration on localhost       |
 
+## Copy files to and from container file system
+
+| Commands                                           | Description                             |
+| -------------------------------------------------- | --------------------------------------- |
+| docker cp \<local path\> \<container-name:/usr/app | copy file from local drive to container |
+
+
+
 ## Docker Compose (docker-compose) 
 
 | Commands             | Description                           |
